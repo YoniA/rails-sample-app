@@ -7,7 +7,7 @@ $ bundle install
 ```
 3. Migrate the database to latest schema:
 ```
-$ `rails db:migrate
+$ rails db:migrate
 ```
 4. Run all test suite for the application:
 ```
