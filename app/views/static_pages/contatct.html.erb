@@ -1,0 +1,12 @@
+<% provide(:contact, "Contact") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> rails demo-app | <%= yield(:contact) %></title>
+</head>
+<body>
+    <div class="content">Hello, this this the <%= yield(:contact) %> page</div>
+</body>
+</html>
