@@ -23,4 +23,11 @@ test "should get about" do
     assert_response :success
     assert_select "title", "#{@base_title} | About"
   end
+
+test "should get contact" do
+  puts static_pages_contact_url
+  get static_pages_contact_url
+  assert_response :success
+  assert_select "title", "#{@base_title} | Contact"
+end
 end

@@ -1,11 +1,12 @@
+<% provide(:about, "About") %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rails demo-app | About</title>
+    <title> rails demo-app | <%= yield(:about) %></title>
 </head>
 <body>
-    <div class="content">Hello, this this the About page</div>
+    <div class="content">Hello, this this the <%= yield(:about) %> page</div>
 </body>
 </html>
