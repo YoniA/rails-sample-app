@@ -7,6 +7,19 @@
     <title> rails demo-app | <%= yield(:title) %></title>
 </head>
 <body>
-    <div class="content">Hello, this this the Home page</div>
+    <div class="center jumbotron">
+        <h1>Welcome to my Rails Sample App!</h1>
+
+        <h2>you can contact me at
+            <a href="themarketwizard1@gmail.com">my email</a>.
+        </h2>
+
+        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    </div>
+
+    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: 200), "https://rubyonrails.org/" %>
+
+    <%= image_tag("kitten.jpg", alt: "kitten", width: 600) %>
+
 </body>
 </html>
