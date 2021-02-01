@@ -2,9 +2,15 @@
 @import "bootstrap";
 
 
-// variables
+// variables, mixins
 
 $light-gray: #777;
+
+@mixin box_sizing {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 //  universal
 
@@ -106,4 +112,15 @@ footer ul {
 footer ul li {
     float: left;
     margin-left: 15px;
+}
+
+
+// misc
+
+.debug_dump {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    @include box_sizing;
 }
